@@ -1,0 +1,65 @@
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    background-color: #f9f9fb;
+    color: #333;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: #7869bc;
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+textarea,
+select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+.optional {
+    font-weight: normal;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.submit-button {
+    background-color: #7869bc;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #6757a0;
+}

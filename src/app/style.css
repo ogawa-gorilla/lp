@@ -1,0 +1,65 @@
+:root {
+  --main-color: #7869bc;
+}
+.hero {
+  background-color: var(--main-color);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+.section-title {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.btn-purple {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+}
+.btn-purple:hover {
+  background-color: #5f56a4;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+.icon {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+.indented-list {
+padding-left: 1.5rem; /* または 2rem に調整可能 */
+}
+.indented-list li {
+margin-bottom: 0.5rem;
+background-color: #f4f1ff;
+}
+.text-subheadline {
+color: #e07bbf
+}
+.text-price {
+  color: #a030cc;
+  font-weight: bold;
+}
+
+/* ページ4の見出し背景色（帯） */
+.page4-heading {
+  background-color: #f8f9fa;
+  padding: 12px 16px;
+  border-left: 4px solid var(--main-color);
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+/* ページ4の本文スタイル */
+.page4-content {
+  padding-right: 20px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.page4-content p {
+  margin-bottom: 12px;
+  text-align: justify;
+}

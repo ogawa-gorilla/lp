@@ -1,103 +1,230 @@
-import Image from "next/image";
+import './style.css'
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    return (
+        <div className="main-container">
+            {/* ヘッダー */}
+            <header className="p-3 text-center">
+                <img
+                    src="/resources/img/logo.png"
+                    alt="ロゴ"
+                    className="img-fluid"
+                    style={{ maxHeight: '320px' }}
+                />
+            </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            {/* ヒーローセクション */}
+            <section className="hero">
+                <h1 className="display-5">
+                    業務システムのこと、
+                    <br />
+                    パソコンのこと、
+                    <br />
+                    クラウドのこと。
+                </h1>
+                <p className="lead">わからなくても、私たちが一緒にやります。</p>
+            </section>
+
+            {/* ページ1 */}
+            <section className="py-5">
+                <div className="container">
+                    <h2 className="section-title mb-3">
+                        専門用語は使いません。
+                    </h2>
+                    <div className="ms-2">
+                        <p>
+                            お客様が「どうしたいか」を聞かせてください。
+                            <br />
+                            それに合った形で、IT化の仕組みを整えます。
+                        </p>
+                        <ul className="list-unstyled mt-4 indented-list">
+                            <li>
+                                <span className="icon">🧾</span>
+                                簡単な業務アプリの開発
+                            </li>
+                            <li>
+                                <span className="icon">🔧</span>
+                                システム保守は全部おまかせ！
+                            </li>
+                            <li>
+                                <span className="icon">📞</span>
+                                小規模ビジネス向け／圧倒的低単価
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            {/* ページ2 */}
+            <section className="bg-light py-5">
+                <div className="container">
+                    <h2 className="section-title mb-3">
+                        こんなお悩みありませんか？
+                    </h2>
+                    <div className="ms-2">
+                        <ul className="list-unstyled indented-list">
+                            <li>
+                                <span className="icon">🧑‍💻</span>
+                                クラウドってなにから始めればいいの？
+                            </li>
+                            <li>
+                                <span className="icon">🗃️</span>
+                                エクセルで管理してるけど限界…
+                            </li>
+                            <li>
+                                <span className="icon">🧾</span>
+                                売上のまとめ、自動化できないかな？
+                            </li>
+                            <li>
+                                <span className="icon">📱</span>
+                                スマホで業務見たいけど、どうしたら？
+                            </li>
+                        </ul>
+                        <p className="mt-3">
+                            全部、わたしたちが一緒に考えます。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            {/* ページ3 */}
+            <section className="py-5">
+                <div className="container">
+                    <h2 className="section-title mb-3">
+                        料金は、お客様の状況に合わせて
+                    </h2>
+                    <div className="ms-2">
+                        <ul className="list-unstyled indented-list">
+                            <li>
+                                <span className="icon">🛠️</span>
+                                <strong>業務アプリ開発</strong> 初期費用{' '}
+                                <span className="text-price">29,980円〜</span>
+                            </li>
+                            <li>
+                                <span className="icon">🧰</span>
+                                <strong>保守サポート</strong>：月額{' '}
+                                <span className="text-price">4,980円〜</span>
+                            </li>
+                        </ul>
+                        <p className="mt-2 text-muted">
+                            ※ 初期費用は内容によって変動します
+                            <br />※ 初回相談・見積もりは無料です
+                        </p>
+                    </div>
+                </div>
+            </section>
+            {/* ページ4 */}
+            <section className="bg-light py-5">
+                <div className="container">
+                    <h2 className="section-title mb-3">
+                        "ちいさい"からこそ、できること
+                    </h2>
+
+                    <div className="ms-2">
+                        <div className="mb-4">
+                            <h4 className="text-subheadline fw-bold page4-heading">
+                                🤝 あなただけにオーダーメイド
+                            </h4>
+                            <div className="page4-content">
+                                <p>
+                                    <strong>
+                                        😰「買ったパッケージソフト、結局うちには合わなかったんだよね」
+                                    </strong>
+                                    <br />
+                                    お客様のお仕事とお困りごとを徹底的にヒアリングして、どんなシステムにするかご相談。
+                                    <br />
+                                    今一番必要な、あなただけのシステムを、オーダーメイドします。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mb-4">
+                            <h4 className="text-subheadline fw-bold page4-heading">
+                                💰 圧倒的な低コスト
+                            </h4>
+                            <div className="page4-content">
+                                <p>
+                                    <strong>
+                                        💸「IT企業に頼むのは高そう…」
+                                    </strong>
+                                    <br />
+                                    そんな方にこそ、小規模ビジネス専門の私たちを。
+                                    <br />
+                                    無駄なコストをかけずに、必要な仕組みを導入できます。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mb-4">
+                            <h4 className="text-subheadline fw-bold page4-heading">
+                                🔧 システム管理は丸投げでOK！
+                            </h4>
+                            <div className="page4-content">
+                                <p>
+                                    <strong>
+                                        🛠️
+                                        「業務システムって導入・管理が大変そう・・」
+                                    </strong>
+                                    <br />
+                                    そんな不安、ありませんか？
+                                    <br />
+                                    導入・保守はすべて私たちにお任せください。
+                                    <br />
+                                    インターネットにつながっていれば、会社でも自宅でも、どこからでも使えます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* ページ5 */}
+            <section className="py-5 text-center">
+                <div className="container">
+                    <h2 className="section-title mb-4">
+                        こんなシステムが作れます
+                    </h2>
+                    <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
+                        <button className="btn btn-purple">
+                            例1: 顧客・請求書管理システム
+                        </button>
+                        <button className="btn btn-purple">
+                            例2: 針灸院 予約管理システム
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            {/* ページ6 */}
+            <section className="py-5 text-center bg-light">
+                <div className="container">
+                    <h2 className="section-title mb-4">
+                        まずは、ゆっくりお話しませんか？
+                    </h2>
+                    <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
+                        <a href="#" className="btn btn-outline-secondary">
+                            LINEで相談
+                        </a>
+                        <a
+                            href="/mailform"
+                            className="btn btn-outline-secondary"
+                        >
+                            フォームで連絡
+                        </a>
+                        <a
+                            href="mailto:chii.yasan@gmail.com"
+                            className="btn btn-outline-secondary"
+                        >
+                            メール
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            {/* フッター */}
+            <footer>
+                &copy; 2025 ちいさなIT屋さん
+                <br />
+                <a href="#">プライバシーポリシー</a> | <a href="#">利用規約</a>
+            </footer>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    )
 }

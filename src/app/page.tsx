@@ -1,3 +1,4 @@
+'use client'
 import './style.css'
 
 export default function Home() {
@@ -187,7 +188,7 @@ export default function Home() {
                             className="btn btn-purple"
                             onClick={() => {
                                 window.open(
-                                    'http://chii-yasan.com:3010',
+                                    'http://www.chii-yasan.com:3010/',
                                     '_blank'
                                 )
                             }}
@@ -198,7 +199,7 @@ export default function Home() {
                             className="btn btn-purple"
                             onClick={() => {
                                 window.open(
-                                    'http://chii-yasan.com:3020',
+                                    'http://www.chii-yasan.com:3020',
                                     '_blank'
                                 )
                             }}

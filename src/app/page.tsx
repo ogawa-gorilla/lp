@@ -223,7 +223,8 @@ export default function Home() {
             <footer>
                 &copy; 2025 ちいさなIT屋さん
                 <br />
-                <a href="#">プライバシーポリシー</a> | <a href="#">利用規約</a>
+                <a href="privacy.html">プライバシーポリシー</a> |{' '}
+                <a href="terms.html">利用規約</a>
             </footer>
         </div>
     )

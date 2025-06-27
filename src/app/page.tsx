@@ -217,7 +217,10 @@ export default function Home() {
                         まずは、ゆっくりお話しませんか？
                     </h2>
                     <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
-                        <a href="#" className="btn btn-outline-secondary">
+                        <a
+                            href="https://lin.ee/kVQZgZu"
+                            className="btn btn-outline-secondary"
+                        >
                             LINEで相談
                         </a>
                         <a

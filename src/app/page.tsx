@@ -2,6 +2,7 @@
 import '@/app/common/common.css'
 import { Container } from 'react-bootstrap'
 import Footer from './common/components/Footer'
+import { LINE_URL } from './constants'
 import './style.css'
 
 export default function Home() {
@@ -134,7 +135,7 @@ export default function Home() {
 
                         <div className="ms-2">
                             <div className="mb-4">
-                                <h4 className="text-subheadline fw-bold page4-heading">
+                                <h4 className="text-subheadline fw-bold subsection-heading">
                                     🤝 あなただけにオーダーメイド
                                 </h4>
                                 <div className="page4-content">
@@ -151,7 +152,7 @@ export default function Home() {
                             </div>
 
                             <div className="mb-4">
-                                <h4 className="text-subheadline fw-bold page4-heading">
+                                <h4 className="text-subheadline fw-bold subsection-heading">
                                     💰 圧倒的な低コスト
                                 </h4>
                                 <div className="page4-content">
@@ -168,7 +169,7 @@ export default function Home() {
                             </div>
 
                             <div className="mb-4">
-                                <h4 className="text-subheadline fw-bold page4-heading">
+                                <h4 className="text-subheadline fw-bold subsection-heading">
                                     🔧 システム管理は丸投げでOK！
                                 </h4>
                                 <div className="page4-content">
@@ -253,7 +254,7 @@ export default function Home() {
                         </h2>
                         <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
                             <a
-                                href="https://lin.ee/kVQZgZu"
+                                href={LINE_URL}
                                 className="btn btn-outline-secondary"
                             >
                                 LINEで相談

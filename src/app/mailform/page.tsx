@@ -18,6 +18,7 @@ export default function MailFormPage() {
     const dispatch = useAppDispatch()
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [submitMessage, setSubmitMessage] = useState('')
+    const [privacyPolicy, setPrivacyPolicy] = useState(false)
 
     const showContactMethod = useMemo(
         () => mailform.preferredContactMethod === ContactMethod.PHONE,
@@ -40,6 +41,13 @@ export default function MailFormPage() {
 
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
+
+        // プライバシーポリシーの同意チェック
+        if (!privacyPolicy) {
+            setSubmitMessage('プライバシーポリシーに同意してください。')
+            return
+        }
+
         setIsSubmitting(true)
         setSubmitMessage('')
 
@@ -196,6 +204,23 @@ export default function MailFormPage() {
                         )
                     }
                 ></textarea>
+
+                <div className="form-check">
+                    <input
+                        type="checkbox"
+                        name="privacy_policy"
+                        className="form-check-input"
+                        required
+                        checked={privacyPolicy}
+                        onChange={(e) => setPrivacyPolicy(e.target.checked)}
+                    />
+                    <label
+                        className="form-check-label"
+                        htmlFor="privacy_policy"
+                    >
+                        プライバシーポリシーに同意する <RequiredMark />
+                    </label>
+                </div>
 
                 {/* 
                 <label htmlFor="contact_method">

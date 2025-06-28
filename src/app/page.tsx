@@ -193,7 +193,7 @@ export default function Home() {
                 <section className="py-5 text-center">
                     <div className="container">
                         <h2 className="section-title mb-4">
-                            こんなシステムが作れます
+                            サンプル：こんなシステムが作れます
                         </h2>
                         <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
                             <button
@@ -232,8 +232,14 @@ export default function Home() {
                             <a href="/scheme" className="btn btn-purple">
                                 導入までの流れ
                             </a>
+                            <a href="/policy" className="btn btn-purple">
+                                私たちのポリシー
+                            </a>
                             {/* <a href="/questions" className="btn btn-purple">
                             よくある質問
+                        </a> */}
+                            {/* <a href="/questions" className="btn btn-purple">
+                            導入事例
                         </a> */}
                         </div>
                     </div>

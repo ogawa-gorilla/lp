@@ -2,6 +2,7 @@
 import '@/app/common/common.css'
 import { Container } from 'react-bootstrap'
 import Footer from './common/components/Footer'
+import Header from './common/components/Header'
 import { LINE_URL } from './constants'
 import './style.css'
 
@@ -9,16 +10,7 @@ export default function Home() {
     return (
         <div className="main-container">
             <Container>
-                {/* ヘッダー */}
-                <header className="p-3 text-center">
-                    <img
-                        src="/resources/img/logo.png"
-                        alt="ロゴ"
-                        className="img-fluid"
-                        style={{ maxHeight: '320px' }}
-                    />
-                </header>
-
+                <Header />
                 {/* ヒーローセクション */}
                 <section className="hero">
                     <h1 className="display-5">

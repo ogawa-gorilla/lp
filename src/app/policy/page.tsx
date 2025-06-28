@@ -1,9 +1,11 @@
 import Footer from '../common/components/Footer'
+import Header from '../common/components/Header'
 import './style.css'
 
 export default function PolicyPage() {
     return (
         <>
+            <Header />
             <main className="container" role="main">
                 <section>
                     <h1>システムは「自動車」ではなく「自転車」でいい。</h1>

@@ -1,8 +1,9 @@
 'use client'
+import '@/app/common/common.css'
 import { useEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import Footer from '../common/components/Footer'
-import '../globals.css'
+import { LINE_URL } from '../constants'
 import './style.css'
 
 export default function Scheme() {
@@ -143,6 +144,22 @@ export default function Scheme() {
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="py-5 text-center">
+                <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
+                    <a href={LINE_URL} className="btn btn-outline-secondary">
+                        LINEで相談
+                    </a>
+                    <a href="/mailform" className="btn btn-outline-secondary">
+                        フォームで連絡
+                    </a>
+                    <a
+                        href="mailto:chii.yasan@gmail.com"
+                        className="btn btn-outline-secondary"
+                    >
+                        メール
+                    </a>
                 </div>
             </section>
             <Footer />

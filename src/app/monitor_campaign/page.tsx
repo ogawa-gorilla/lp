@@ -1,13 +1,17 @@
 import '@/app/common/common.css'
 import Footer from '@/app/common/components/Footer'
+import Header from '../common/components/Header'
 import { LINE_URL } from '../constants'
 import './style.css'
 
 export default function MonitorCampaignPage() {
     return (
         <div className="main-container">
+            <Header />
             <main className="container" role="main">
-                <h1 className="p-3">💡 モニターキャンペーン実施中！</h1>
+                <section className="hero py-5">
+                    <h1 className="p-3">💡 モニターキャンペーン実施中！</h1>
+                </section>
                 <section className="content py-5">
                     <p className="ml-3">
                         ちいさなIT屋さんでは、ただいま{' '}

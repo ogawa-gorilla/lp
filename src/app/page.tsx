@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 import CampaignBanner from './common/components/CampaignBanner'
 import Footer from './common/components/Footer'
 import Header from './common/components/Header'
-import { LINE_URL } from './constants'
+import { LINE_URL, MAINTENANCE_FEE, MINIMUM_INITIAL_FEE } from './constants'
 import './style.css'
 
 export default function Home() {
@@ -104,14 +104,15 @@ export default function Home() {
                                         業務アプリ開発
                                     </strong> 初期費用{' '}
                                     <span className="text-price">
-                                        9,980円〜
+                                        {MINIMUM_INITIAL_FEE.toLocaleString()}
+                                        円〜
                                     </span>
                                 </li>
                                 <li>
                                     <span className="icon">🧰</span>
                                     <strong>保守サポート</strong> 月額{' '}
                                     <span className="text-price">
-                                        1,980円〜 + サーバ料金
+                                        {MAINTENANCE_FEE.toLocaleString()}円/月
                                     </span>
                                 </li>
                             </ul>

@@ -1,7 +1,7 @@
 import '@/app/common/common.css'
 import Footer from '@/app/common/components/Footer'
 import Header from '../common/components/Header'
-import { LINE_URL } from '../constants'
+import { LINE_URL, MAINTENANCE_FEE, MINIMUM_INITIAL_FEE } from '../constants'
 import './style.css'
 
 export default function MonitorCampaignPage() {
@@ -26,17 +26,23 @@ export default function MonitorCampaignPage() {
                     <ul>
                         <li className="mb-3">
                             <strong>
-                                初期費用 <s>19,800円～</s> → 0円！
+                                初期費用{' '}
+                                <s>
+                                    {MINIMUM_INITIAL_FEE.toLocaleString()}円～
+                                </s>{' '}
+                                → 0円！
                             </strong>
                             <br />
                             システムの企画・設計・制作にかかる初期費用は、すべて無料でご提供します。
                         </li>
                         <li className="mb-3">
                             <strong>
-                                保守費用も 3ヵ月間 <s>2,980円</s> → 0円/月！
+                                保守費用も 6ヵ月間{' '}
+                                <s>{MAINTENANCE_FEE.toLocaleString()}円</s> →{' '}
+                                0円/月！
                             </strong>
                             <br />
-                            3ヶ月間はサポートや保守費用もかかりません。期間内に合わないと感じた場合は、
+                            6ヶ月間はサポートや保守費用もかかりません。期間内に合わないと感じた場合は、
                             <strong>そのまま無料で解約</strong>いただけます。
                         </li>
                     </ul>

@@ -7,9 +7,7 @@ export default function MonitorCampaignPage() {
     return (
         <div className="main-container">
             <main className="container" role="main">
-                <h1 className="section-title">
-                    💡 モニターキャンペーン実施中！
-                </h1>
+                <h1 className="p-3">💡 モニターキャンペーン実施中！</h1>
                 <section className="content py-5">
                     <p className="ml-3">
                         ちいさなIT屋さんでは、ただいま{' '}
@@ -72,6 +70,7 @@ export default function MonitorCampaignPage() {
                     <ul>
                         <li className="mb-3">
                             <strong>募集期間：</strong>2025年7月1日〜
+                            <br />
                             枠が埋まるまで（先着2社、審査あり）
                         </li>
                         <li className="mb-3">

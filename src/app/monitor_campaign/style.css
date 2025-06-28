@@ -3,7 +3,7 @@ section.content {
     margin: 3em 0;
     padding: 2em;
     background: #f9f9f9;
-    border-left: 6px solid #78c0a8; /* 柔らかめグリーン */
+    border-left: 6px solid #7869bc; /* 柔らかめグリーン */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -35,7 +35,7 @@ section.content ul li {
 
 /* 強調 */
 section.content strong {
-    color: #2a7f62;
+    color: #7869bc;
     font-weight: 600;
 }
 

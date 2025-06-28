@@ -29,7 +29,9 @@ export default function Home() {
                         クラウドのこと。
                     </h1>
                     <p className="lead">
-                        わからなくても、私たちが一緒にやります。
+                        わからなくても、
+                        <br />
+                        私たちが一緒にやります。
                     </p>
                 </section>
 

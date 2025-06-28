@@ -1,10 +1,9 @@
-import { Container } from 'react-bootstrap'
 import Footer from '../common/components/Footer'
 import './style.css'
 
 export default function PolicyPage() {
     return (
-        <Container>
+        <>
             <main className="container" role="main">
                 <section>
                     <h1>システムは「自動車」ではなく「自転車」でいい。</h1>
@@ -106,6 +105,6 @@ export default function PolicyPage() {
                 </section>
             </main>
             <Footer />
-        </Container>
+        </>
     )
 }

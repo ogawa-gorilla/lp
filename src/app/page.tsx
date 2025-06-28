@@ -112,7 +112,8 @@ export default function Home() {
                                     <span className="icon">🧰</span>
                                     <strong>保守サポート</strong> 月額{' '}
                                     <span className="text-price">
-                                        {MAINTENANCE_FEE.toLocaleString()}円/月
+                                        {MAINTENANCE_FEE.toLocaleString()}
+                                        円/月～
                                     </span>
                                 </li>
                             </ul>

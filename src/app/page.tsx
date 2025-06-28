@@ -1,4 +1,5 @@
 'use client'
+import Footer from './common/components/Footer'
 import './style.css'
 
 export default function Home() {
@@ -98,12 +99,14 @@ export default function Home() {
                             <li>
                                 <span className="icon">🛠️</span>
                                 <strong>業務アプリ開発</strong> 初期費用{' '}
-                                <span className="text-price">29,980円〜</span>
+                                <span className="text-price">9,980円〜</span>
                             </li>
                             <li>
                                 <span className="icon">🧰</span>
-                                <strong>保守サポート</strong>：月額{' '}
-                                <span className="text-price">4,980円〜</span>
+                                <strong>保守サポート</strong> 月額{' '}
+                                <span className="text-price">
+                                    1,980円〜 + サーバ料金
+                                </span>
                             </li>
                         </ul>
                         <p className="mt-2 text-muted">
@@ -213,6 +216,21 @@ export default function Home() {
             {/* ページ6 */}
             <section className="py-5 text-center bg-light">
                 <div className="container">
+                    <h2 className="section-title mb-4">インフォメーション</h2>
+                    <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
+                        <a href="/scheme" className="btn btn-purple">
+                            導入までの流れ
+                        </a>
+                        {/* <a href="/questions" className="btn btn-purple">
+                            よくある質問
+                        </a> */}
+                    </div>
+                </div>
+            </section>
+
+            {/* ページ7 */}
+            <section className="py-5 text-center">
+                <div className="container">
                     <h2 className="section-title mb-4">
                         まずは、ゆっくりお話しませんか？
                     </h2>
@@ -240,12 +258,7 @@ export default function Home() {
             </section>
 
             {/* フッター */}
-            <footer>
-                &copy; 2025 ちいさなIT屋さん
-                <br />
-                <a href="privacy.html">プライバシーポリシー</a> |{' '}
-                <a href="terms.html">利用規約</a>
-            </footer>
+            <Footer />
         </div>
     )
 }

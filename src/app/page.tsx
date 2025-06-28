@@ -94,7 +94,9 @@ export default function Home() {
                 <section className="py-5">
                     <div className="container">
                         <h2 className="section-title mb-3">
-                            料金は、お客様の状況に合わせて
+                            料金は、
+                            <br />
+                            お客様の状況に合わせて
                         </h2>
                         <div className="ms-2">
                             <ul className="list-unstyled indented-list">
@@ -174,7 +176,7 @@ export default function Home() {
                                     <p>
                                         <strong>
                                             🛠️
-                                            「業務システムって導入・管理が大変そう・・」
+                                            「システムって導入・管理が大変そう・・」
                                         </strong>
                                         <br />
                                         そんな不安、ありませんか？
@@ -182,6 +184,8 @@ export default function Home() {
                                         導入・保守はすべて私たちにお任せください。
                                         <br />
                                         インターネットにつながっていれば、会社でも自宅でも、どこからでも使えます。
+                                        <br />
+                                        お客様の大切なシステムとデータを、責任をもって管理します。
                                     </p>
                                 </div>
                             </div>
@@ -192,7 +196,9 @@ export default function Home() {
                 <section className="py-5 text-center">
                     <div className="container">
                         <h2 className="section-title mb-4">
-                            サンプル：こんなシステムが作れます
+                            サンプル：
+                            <br />
+                            こんなシステムが作れます
                         </h2>
                         <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
                             <button

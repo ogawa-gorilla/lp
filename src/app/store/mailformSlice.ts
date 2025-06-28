@@ -1,9 +1,16 @@
+'use client'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 export const ContactMethod = {
     MAIL: 'MAIL',
     PHONE: 'PHONE',
     UNSELECTED: 'UNSELECTED',
+}
+
+export const Subject = {
+    INQUIRY: 'INQUIRY',
+    MONITOR_CAMPAIGN: 'MONITOR_CAMPAIGN',
+    OTHER: 'OTHER',
 }
 
 export interface MailFormState {
@@ -15,6 +22,7 @@ export interface MailFormState {
     message: string
     preferredContactMethod: string
     availableTime: string
+    subject: string
 }
 
 const initialState: MailFormState = {
@@ -26,16 +34,20 @@ const initialState: MailFormState = {
     message: '',
     preferredContactMethod: ContactMethod.MAIL,
     availableTime: '',
+    subject: Subject.INQUIRY,
 }
 
 export const mailformSlice = createSlice({
     name: 'mailform',
     initialState: initialState,
     reducers: {
-        updateState: (state, action: PayloadAction<Partial<MailFormState>>) => {
+        updateMailformState: (
+            state,
+            action: PayloadAction<Partial<MailFormState>>
+        ) => {
             return { ...state, ...action.payload }
         },
     },
 })
 
-export const { updateState } = mailformSlice.actions
+export const { updateMailformState } = mailformSlice.actions

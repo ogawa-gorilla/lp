@@ -72,7 +72,7 @@ export default function MonitorCampaignPage() {
                     <ul>
                         <li className="mb-3">
                             <strong>募集期間：</strong>2025年7月1日〜
-                            枠が埋まるまで（先着2社）
+                            枠が埋まるまで（先着2社、審査あり）
                         </li>
                         <li className="mb-3">
                             <strong>対象：</strong>
@@ -94,7 +94,10 @@ export default function MonitorCampaignPage() {
                         <a href={LINE_URL} className="btn btn-purple">
                             LINEでお問い合わせ
                         </a>
-                        <a href="/mailform" className="btn btn-purple">
+                        <a
+                            href={`/mailform?subject=MONITOR_CAMPAIGN`}
+                            className="btn btn-purple"
+                        >
                             メールフォームからお問い合わせ
                         </a>
                     </div>

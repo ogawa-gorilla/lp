@@ -1,9 +1,13 @@
 'use client'
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Container from 'react-bootstrap/esm/Container'
 import { useSelector } from 'react-redux'
 import { useAppDispatch } from '../hooks'
-import { ContactMethod, updateState } from '../store/mailformSlice'
+import {
+    ContactMethod,
+    Subject,
+    updateMailformState,
+} from '../store/mailformSlice'
 import { RootState } from '../store/store'
 import InlineInputField from './components/InlineInputField'
 import RequiredMark from './components/RequiredMark'
@@ -21,8 +25,18 @@ export default function MailFormPage() {
     )
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        dispatch(updateState({ [e.target.name]: e.target.value }))
+        dispatch(updateMailformState({ [e.target.name]: e.target.value }))
     }
+
+    useEffect(() => {
+        const subject = new URLSearchParams(window.location.search).get(
+            'subject'
+        )
+        console.log(subject)
+        if (subject) {
+            dispatch(updateMailformState({ subject: subject }))
+        }
+    }, [])
 
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
@@ -49,7 +63,7 @@ export default function MailFormPage() {
                 )
                 // フォームをリセット
                 dispatch(
-                    updateState({
+                    updateMailformState({
                         fullName: '',
                         industry: '',
                         companyName: '',
@@ -92,7 +106,9 @@ export default function MailFormPage() {
                     required={true}
                     value={mailform.fullName}
                     onChange={(e) =>
-                        dispatch(updateState({ fullName: e.target.value }))
+                        dispatch(
+                            updateMailformState({ fullName: e.target.value })
+                        )
                     }
                     placeholder="例：山田太郎"
                 />
@@ -102,7 +118,9 @@ export default function MailFormPage() {
                     required={false}
                     value={mailform.industry}
                     onChange={(e) =>
-                        dispatch(updateState({ industry: e.target.value }))
+                        dispatch(
+                            updateMailformState({ industry: e.target.value })
+                        )
                     }
                     placeholder="例：商店"
                 />
@@ -113,7 +131,9 @@ export default function MailFormPage() {
                     required={false}
                     value={mailform.companyName}
                     onChange={(e) =>
-                        dispatch(updateState({ companyName: e.target.value }))
+                        dispatch(
+                            updateMailformState({ companyName: e.target.value })
+                        )
                     }
                 />
 
@@ -123,7 +143,9 @@ export default function MailFormPage() {
                     required={false}
                     value={mailform.phoneNumber}
                     onChange={(e) =>
-                        dispatch(updateState({ phoneNumber: e.target.value }))
+                        dispatch(
+                            updateMailformState({ phoneNumber: e.target.value })
+                        )
                     }
                     numeric
                 />
@@ -134,12 +156,33 @@ export default function MailFormPage() {
                     required={true}
                     value={mailform.mailAddress}
                     onChange={(e) =>
-                        dispatch(updateState({ mailAddress: e.target.value }))
+                        dispatch(
+                            updateMailformState({ mailAddress: e.target.value })
+                        )
                     }
                 />
 
+                <label htmlFor="subject">お問い合わせ内容</label>
+                <select
+                    id="subject"
+                    name="subject"
+                    required
+                    onChange={(e) =>
+                        dispatch(
+                            updateMailformState({ subject: e.target.value })
+                        )
+                    }
+                    value={mailform.subject}
+                >
+                    <option value={Subject.INQUIRY}>無料相談を希望</option>
+                    <option value={Subject.MONITOR_CAMPAIGN}>
+                        モニターキャンペーン
+                    </option>
+                    <option value={Subject.OTHER}>その他</option>
+                </select>
+
                 <label htmlFor="message">
-                    お問い合わせ内容 <RequiredMark />
+                    お問い合わせ内容詳細 <RequiredMark />
                 </label>
                 <textarea
                     id="message"
@@ -148,7 +191,9 @@ export default function MailFormPage() {
                     placeholder="どのようなお仕事をしていて、どのような場面でお困りごとがあるのか、できるだけ詳しくお願いします"
                     value={mailform.message}
                     onChange={(e) =>
-                        dispatch(updateState({ message: e.target.value }))
+                        dispatch(
+                            updateMailformState({ message: e.target.value })
+                        )
                     }
                 ></textarea>
 
@@ -184,7 +229,7 @@ export default function MailFormPage() {
                         value={mailform.availableTime}
                         onChange={(e) =>
                             dispatch(
-                                updateState({
+                                updateMailformState({
                                     availableTime: e.target.value,
                                 })
                             )

@@ -1,3 +1,4 @@
+import { Subject } from '@/app/store/mailformSlice'
 import { NextRequest, NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 
@@ -13,6 +14,7 @@ export async function POST(request: NextRequest) {
             message,
             preferredContactMethod,
             availableTime,
+            subject,
         } = body
 
         // 環境変数のチェック
@@ -67,6 +69,13 @@ export async function POST(request: NextRequest) {
 【電話番号】${phoneNumber || '未入力'}
 【メールアドレス】${mailAddress}
 【お問い合わせ内容】
+${
+    subject === Subject.MONITOR_CAMPAIGN
+        ? '[モニターキャンペーン]'
+        : subject === Subject.INQUIRY
+        ? '[無料相談を希望]'
+        : '[その他]'
+}
 ${message}
 【ご希望の連絡方法】${preferredContactMethod === 'MAIL' ? 'メール' : '電話'}
 ${`【ご希望の連絡時間】${availableTime}`}

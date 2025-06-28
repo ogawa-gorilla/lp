@@ -1,6 +1,7 @@
 'use client'
 import '@/app/common/common.css'
 import { Container } from 'react-bootstrap'
+import CampaignBanner from './common/components/CampaignBanner'
 import Footer from './common/components/Footer'
 import Header from './common/components/Header'
 import { LINE_URL } from './constants'
@@ -9,6 +10,7 @@ import './style.css'
 export default function Home() {
     return (
         <div className="main-container">
+            <CampaignBanner />
             <Container>
                 <Header />
                 {/* ヒーローセクション */}

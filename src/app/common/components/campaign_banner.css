@@ -1,0 +1,17 @@
+.info-bar {
+    background: #78c0a8;
+    color: white;
+    text-align: center;
+    padding: 0.7em 1em;
+    font-weight: bold;
+    font-size: 0.95em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.info-bar a {
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 0.5em;
+}

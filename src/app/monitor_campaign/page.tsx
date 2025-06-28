@@ -25,12 +25,16 @@ export default function MonitorCampaignPage() {
                     <h3 className="subsection-heading">🎁 モニター特典</h3>
                     <ul>
                         <li className="mb-3">
-                            <strong>初期費用 0円！</strong>
+                            <strong>
+                                初期費用 <s>19,800円～</s> → 0円！
+                            </strong>
                             <br />
                             システムの企画・設計・制作にかかる初期費用は、すべて無料でご提供します。
                         </li>
                         <li className="mb-3">
-                            <strong>保守費用も 3ヶ月間 無料！</strong>
+                            <strong>
+                                保守費用も 3ヵ月間 <s>2,980円</s> → 0円/月！
+                            </strong>
                             <br />
                             3ヶ月間はサポートや保守費用もかかりません。期間内に合わないと感じた場合は、
                             <strong>そのまま無料で解約</strong>いただけます。

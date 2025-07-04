@@ -118,10 +118,13 @@ export default function Scheme() {
                                 </div>
                                 <div>
                                     <h5 className="fw-bold text-primary mb-1">
-                                        ⑤ テスト運用＋フォローアップ（2回）
+                                        ⑤
+                                        テスト運用期間～フォローアップ面談（2回）
                                     </h5>
                                     <p className="mb-0">
-                                        実際に使っていただき、2回の面談で改善点や追加要望を丁寧に伺います。
+                                        実際に使っていただき、面談で改善点や追加要望を丁寧に伺います。
+                                        <br />
+                                        この流れを2回行うことにしています。
                                     </p>
                                 </div>
                             </div>

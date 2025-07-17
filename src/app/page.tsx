@@ -192,48 +192,83 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                {/* ページ5 */}
-                <section className="py-5 text-center">
+                {/* ページ4 */}
+                <section className="bg-light py-5">
                     <div className="container">
-                        <h2 className="section-title mb-4">
-                            サンプル：
-                            <br />
-                            こんなシステムが作れます
+                        <h2 className="section-title mb-3">
+                            "ちいさい"からこそ、できること
                         </h2>
-                        <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
-                            <button
-                                className="btn btn-purple"
-                                onClick={() => {
-                                    window.open(
-                                        'http://www.chii-yasan.com:3010/',
-                                        '_blank'
-                                    )
-                                }}
-                            >
-                                例1: 顧客・請求書管理システム
-                            </button>
-                            <button
-                                className="btn btn-purple"
-                                onClick={() => {
-                                    window.open(
-                                        'http://www.chii-yasan.com:3020',
-                                        '_blank'
-                                    )
-                                }}
-                            >
-                                例2: 針灸院 予約管理システム
-                            </button>
+
+                        <div className="ms-2">
+                            <div className="mb-4">
+                                <h4 className="text-subheadline fw-bold subsection-heading">
+                                    🤝 あなただけにオーダーメイド
+                                </h4>
+                                <div className="page4-content">
+                                    <p>
+                                        <strong>
+                                            😰「買ったパッケージソフト、結局うちには合わなかったんだよね」
+                                        </strong>
+                                        <br />
+                                        お客様のお仕事とお困りごとを徹底的にヒアリングして、どんなシステムにするかご相談。
+                                        <br />
+                                        今一番必要な、あなただけのシステムを、オーダーメイドします。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="mb-4">
+                                <h4 className="text-subheadline fw-bold subsection-heading">
+                                    💰 圧倒的な低コスト
+                                </h4>
+                                <div className="page4-content">
+                                    <p>
+                                        <strong>
+                                            💸「IT企業に頼むのは高そう…」
+                                        </strong>
+                                        <br />
+                                        そんな方にこそ、小規模ビジネス専門の私たちを。
+                                        <br />
+                                        無駄なコストをかけずに、必要な仕組みを導入できます。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="mb-4">
+                                <h4 className="text-subheadline fw-bold subsection-heading">
+                                    🔧 システム管理は丸投げでOK！
+                                </h4>
+                                <div className="page4-content">
+                                    <p>
+                                        <strong>
+                                            🛠️
+                                            「システムって導入・管理が大変そう・・」
+                                        </strong>
+                                        <br />
+                                        そんな不安、ありませんか？
+                                        <br />
+                                        導入・保守はすべて私たちにお任せください。
+                                        <br />
+                                        インターネットにつながっていれば、会社でも自宅でも、どこからでも使えます。
+                                        <br />
+                                        お客様の大切なシステムとデータを、責任をもって管理します。
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 {/* ページ6 */}
-                <section className="py-5 text-center bg-light">
+                <section className="py-5 text-center">
                     <div className="container">
                         <h2 className="section-title mb-4">
                             インフォメーション
                         </h2>
                         <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
+                            <a href="/aboutus" className="btn btn-purple">
+                                事業者情報・代表紹介
+                            </a>
                             <a href="/scheme" className="btn btn-purple">
                                 導入までの流れ
                             </a>
@@ -250,7 +285,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* ページ7 */}
+                {/* ページ8 */}
                 <section className="py-5 text-center">
                     <div className="container">
                         <h2 className="section-title mb-4">

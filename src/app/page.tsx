@@ -220,7 +220,7 @@ export default function Home() {
                 </section>
 
                 {/* ページ8 */}
-                <section className="py-5 text-center">
+                <section className="py-5 text-center bg-light">
                     <div className="container">
                         <h2 className="section-title mb-4">
                             まずは、ゆっくりお話しませんか？

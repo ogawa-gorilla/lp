@@ -23,9 +23,6 @@ export default function AboutUsPage() {
                         <br />
                         <strong>メールアドレス：</strong>chii.yasan@gmail.com
                         <br />
-                        <strong>営業時間：</strong>平日
-                        12:00～18:00（土日祝休み,不定休あり）
-                        <br />
                         <strong>事業内容：</strong>
                         <br />
                         - 小規模事業者向け業務システム提案/開発/保守

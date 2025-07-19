@@ -64,23 +64,25 @@ export default function MonitorCampaignPage() {
                                 今後の参考事例としてWebサイト等でご紹介させていただく場合があります。
                             </strong>
                         </li>
-                        <li className="mb-3">
-                            公開するのはあくまで<strong>デモ環境</strong>
-                            （別のデータベースを使用したサンプル）であり、
-                            <strong>
-                                お客様が実際にご利用いただく本番システムとは完全に切り離されています。
-                            </strong>
-                        </li>
-                        <li className="mb-3">
-                            実際の業務データや社名などの
-                            <strong>機密情報は一切含みません。</strong>
-                        </li>
-                        <li className="mb-3">
-                            公開内容については
-                            <strong>
-                                事前にご確認いただき、非公開にしたい部分は柔軟に対応いたします。
-                            </strong>
-                        </li>
+                        <ul>
+                            <li className="mb-3">
+                                公開するのはあくまで<strong>デモ環境</strong>
+                                （別のデータベースを使用したサンプル）であり、
+                                <strong>
+                                    お客様が実際にご利用いただく本番システムとは完全に切り離されています。
+                                </strong>
+                            </li>
+                            <li className="mb-3">
+                                実際の業務データや社名などの
+                                <strong>機密情報は一切含みません。</strong>
+                            </li>
+                            <li className="mb-3">
+                                公開内容については
+                                <strong>
+                                    事前にご確認いただき、非公開にしたい部分は柔軟に対応いたします。
+                                </strong>
+                            </li>
+                        </ul>
                     </ul>
                 </section>
 

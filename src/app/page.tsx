@@ -20,7 +20,7 @@ export default function Home() {
                         <br />
                         パソコンのこと、
                         <br />
-                        クラウドのこと。
+                        DXのこと。
                     </h1>
                     <p className="lead">
                         わからなくても、
@@ -39,7 +39,7 @@ export default function Home() {
                             <p>
                                 お客様が「どうしたいか」を聞かせてください。
                                 <br />
-                                それに合った形で、IT化の仕組みを整えます。
+                                それに合った形で、自動化の仕組みを整えます。
                             </p>
                             <ul className="list-unstyled mt-4 indented-list">
                                 <li>
@@ -69,7 +69,7 @@ export default function Home() {
                             <ul className="list-unstyled indented-list">
                                 <li>
                                     <span className="icon">🧑‍💻</span>
-                                    クラウドってなにから始めればいいの？
+                                    DX(デジタルトランスフォーメーション)ってなにから始めればいいの？
                                 </li>
                                 <li>
                                     <span className="icon">🗃️</span>
@@ -122,6 +122,8 @@ export default function Home() {
                             <p className="mt-2 text-muted">
                                 ※ 初期費用は内容によって変動します
                                 <br />※ 初回相談・見積もりは無料です
+                                <br />※
+                                為替相場やクラウド料金の変動により、サービスの提供価格は予告なく変更となる場合があります。すでにご成約いただいた内容には影響いたしません。
                             </p>
                         </div>
                     </div>

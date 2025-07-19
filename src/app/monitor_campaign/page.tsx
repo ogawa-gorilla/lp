@@ -37,12 +37,12 @@ export default function MonitorCampaignPage() {
                         </li>
                         <li className="mb-3">
                             <strong>
-                                保守費用も 6ヵ月間{' '}
+                                保守費用も 3ヵ月間{' '}
                                 <s>{MAINTENANCE_FEE.toLocaleString()}円</s> →{' '}
                                 0円/月！
                             </strong>
                             <br />
-                            6ヶ月間はサポートや保守費用もかかりません。期間内に合わないと感じた場合は、
+                            3ヶ月間はサポートや保守費用もかかりません。期間内に合わないと感じた場合は、
                             <strong>そのまま無料で解約</strong>いただけます。
                         </li>
                     </ul>

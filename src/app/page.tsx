@@ -220,9 +220,42 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+                <section className="py-5 text-center bg-light">
+                    <div className="container">
+                        <h2 className="section-title mb-4">
+                            サンプル：
+                            <br />
+                            こんなシステムが作れます
+                        </h2>
+                        <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
+                            <button
+                                className="btn btn-purple"
+                                onClick={() => {
+                                    window.open(
+                                        'http://www.chii-yasan.com:3010/',
+                                        '_blank'
+                                    )
+                                }}
+                            >
+                                例1: 顧客・請求書管理システム
+                            </button>
+                            <button
+                                className="btn btn-purple"
+                                onClick={() => {
+                                    window.open(
+                                        'http://www.chii-yasan.com:3020',
+                                        '_blank'
+                                    )
+                                }}
+                            >
+                                例2: 針灸院 予約管理システム
+                            </button>
+                        </div>
+                    </div>
+                </section>
 
                 {/* ページ8 */}
-                <section className="py-5 text-center bg-light">
+                <section className="py-5 text-center">
                     <div className="container">
                         <h2 className="section-title mb-4">
                             まずは、ゆっくりお話しませんか？

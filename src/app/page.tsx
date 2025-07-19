@@ -69,7 +69,7 @@ export default function Home() {
                             <ul className="list-unstyled indented-list">
                                 <li>
                                     <span className="icon">🧑‍💻</span>
-                                    DX(デジタルトランスフォーメーション)ってなにから始めればいいの？
+                                    DXとか自動化ってなにから始めればいいの？
                                 </li>
                                 <li>
                                     <span className="icon">🗃️</span>

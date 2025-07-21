@@ -1,5 +1,6 @@
-'use client'
 import '@/app/common/common.css'
+import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Container } from 'react-bootstrap'
 import CampaignBanner from './common/components/CampaignBanner'
 import Footer from './common/components/Footer'
@@ -7,15 +8,87 @@ import Header from './common/components/Header'
 import { LINE_URL, MAINTENANCE_FEE, MINIMUM_INITIAL_FEE } from './constants'
 import './style.css'
 
+export const metadata: Metadata = {
+    title: 'ホーム',
+    description:
+        '小規模ビジネス向けのDX・システム開発・自動化サービス。業務アプリ開発、システム保守、自動化を小さなビジネスに寄り添うように分かりやすく提供。まずは無料相談から。',
+    openGraph: {
+        title: 'ちいさなIT屋さん - 小規模ビジネス向けDX・システム開発',
+        description:
+            '小規模ビジネス向けのDX・システム開発・保守サービス。業務アプリ開発、システム保守、自動化を専門用語を使わずに分かりやすく提供。',
+        url: 'https://www.chii-yasan.com',
+    },
+    alternates: {
+        canonical: '/',
+    },
+}
+
 export default function Home() {
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        name: 'ちいさなIT屋さん',
+        description: '小規模ビジネス向けのDX・システム開発・自動化サービス',
+        url: 'https://www.chii-yasan.com',
+        telephone: '+81-xxx-xxx-xxxx',
+        email: 'chii.yasan@gmail.com',
+        address: {
+            '@type': 'PostalAddress',
+            addressCountry: 'JP',
+            addressLocality: '日本',
+        },
+        serviceArea: {
+            '@type': 'Country',
+            name: '日本',
+        },
+        hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: 'ITサービス',
+            itemListElement: [
+                {
+                    '@type': 'Offer',
+                    itemOffered: {
+                        '@type': 'Service',
+                        name: '業務アプリ開発',
+                        description:
+                            '小規模ビジネス向けの業務アプリケーション開発',
+                    },
+                    priceSpecification: {
+                        '@type': 'PriceSpecification',
+                        price: MINIMUM_INITIAL_FEE,
+                        priceCurrency: 'JPY',
+                        description: '初期費用',
+                    },
+                },
+                {
+                    '@type': 'Offer',
+                    itemOffered: {
+                        '@type': 'Service',
+                        name: 'DX・自動化',
+                        description: 'DX・自動化システムサービス',
+                    },
+                },
+            ],
+        },
+    }
+
     return (
         <div className="main-container">
+            <Script
+                id="structured-data"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <CampaignBanner />
             <Container>
                 <Header />
                 {/* ヒーローセクション */}
-                <section className="hero">
-                    <h1 className="display-5">
+                <section
+                    className="hero"
+                    role="banner"
+                    aria-labelledby="hero-heading"
+                >
+                    <h1 id="hero-heading" className="display-5">
                         業務システムのこと、
                         <br />
                         パソコンのこと、
@@ -30,9 +103,12 @@ export default function Home() {
                 </section>
 
                 {/* ページ1 */}
-                <section className="py-5">
+                <section className="py-5" aria-labelledby="section1-heading">
                     <div className="container">
-                        <h2 className="section-title mb-3">
+                        <h2
+                            id="section1-heading"
+                            className="section-title mb-3"
+                        >
                             専門用語は使いません。
                         </h2>
                         <div className="ms-2">

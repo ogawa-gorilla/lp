@@ -304,28 +304,22 @@ export default function Home() {
                             こんなシステムが作れます
                         </h2>
                         <div className="d-grid gap-3 col-12 col-md-6 mx-auto">
-                            <button
+                            <a
+                                href="http://www.chii-yasan.com:3010/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="btn btn-purple"
-                                onClick={() => {
-                                    window.open(
-                                        'http://www.chii-yasan.com:3010/',
-                                        '_blank'
-                                    )
-                                }}
                             >
                                 例1: 顧客・請求書管理システム
-                            </button>
-                            <button
+                            </a>
+                            <a
+                                href="http://www.chii-yasan.com:3020"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="btn btn-purple"
-                                onClick={() => {
-                                    window.open(
-                                        'http://www.chii-yasan.com:3020',
-                                        '_blank'
-                                    )
-                                }}
                             >
                                 例2: 針灸院 予約管理システム
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </section>

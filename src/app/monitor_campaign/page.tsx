@@ -39,9 +39,7 @@ export default function MonitorCampaignPage() {
                     </h3>
                     <ul>
                         <li className="mb-3">
-                            製品の規模が一定以上の場合、完全無料ではなく割引という形になることがあります。
-                            <br />
-                            予めご了承ください。
+                            初期費用は別にかかります。ご留意ください。
                         </li>
                         <li className="mb-3">
                             制作したシステムは、

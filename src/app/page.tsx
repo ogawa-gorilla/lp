@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap'
 import CampaignBanner from './common/components/CampaignBanner'
 import Footer from './common/components/Footer'
 import Header from './common/components/Header'
-import { LINE_URL, MAINTENANCE_FEE, MINIMUM_INITIAL_FEE } from './constants'
+import { LINE_URL, MINIMUM_INITIAL_FEE } from './constants'
 import './style.css'
 
 export const metadata: Metadata = {
@@ -175,26 +175,13 @@ export default function Home() {
                             お客様の状況に合わせて
                         </h2>
                         <div className="ms-2">
-                            <ul className="list-unstyled indented-list">
-                                <li>
-                                    <span className="icon">🛠️</span>
-                                    <strong>
-                                        業務アプリ開発
-                                    </strong> 初期費用{' '}
-                                    <span className="text-price">
-                                        {MINIMUM_INITIAL_FEE.toLocaleString()}
-                                        円〜
-                                    </span>
-                                </li>
-                                <li>
-                                    <span className="icon">🧰</span>
-                                    <strong>保守サポート</strong> 月額{' '}
-                                    <span className="text-price">
-                                        {MAINTENANCE_FEE.toLocaleString()}
-                                        円/月～
-                                    </span>
-                                </li>
-                            </ul>
+                            <p>
+                                ちょっとした自動化ツールから、本格的な業務システムまで、
+                                <br />
+                                ご予算に応じてお作りします。
+                                <br />
+                                まずはお気軽にお問い合わせください。
+                            </p>
                             <p className="mt-2 text-muted">
                                 ※ 初期費用は内容によって変動します
                                 <br />※ 初回相談・見積もりは無料です

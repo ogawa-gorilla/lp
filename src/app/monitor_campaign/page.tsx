@@ -1,7 +1,7 @@
 import '@/app/common/common.css'
 import Footer from '@/app/common/components/Footer'
 import Header from '../common/components/Header'
-import { LINE_URL, MAINTENANCE_FEE, MINIMUM_INITIAL_FEE } from '../constants'
+import { LINE_URL } from '../constants'
 import './style.css'
 
 export default function MonitorCampaignPage() {
@@ -25,25 +25,10 @@ export default function MonitorCampaignPage() {
                     <h3 className="subsection-heading">🎁 モニター特典</h3>
                     <ul>
                         <li className="mb-3">
-                            <strong>
-                                初期費用{' '}
-                                <s>
-                                    {MINIMUM_INITIAL_FEE.toLocaleString()}円～
-                                </s>{' '}
-                                → 0円！
-                            </strong>
+                            <strong>保守費用が 12ヵ月間 無料！</strong>
                             <br />
-                            システムの企画・設計・制作にかかる初期費用は、すべて無料でご提供します。
-                        </li>
-                        <li className="mb-3">
-                            <strong>
-                                保守費用も 3ヵ月間{' '}
-                                <s>{MAINTENANCE_FEE.toLocaleString()}円</s> →{' '}
-                                0円/月！
-                            </strong>
-                            <br />
-                            3ヶ月間はサポートや保守費用もかかりません。期間内に合わないと感じた場合は、
-                            <strong>そのまま無料で解約</strong>いただけます。
+                            12ヶ月間は、基本保守費用がかかりません。
+                            <strong>契約年数の縛りもなし</strong>です。
                         </li>
                     </ul>
                 </section>
@@ -83,6 +68,9 @@ export default function MonitorCampaignPage() {
                                 </strong>
                             </li>
                         </ul>
+                        <li className="mb-3">
+                            本キャンペーンの内容は予告なく変更することがあります。
+                        </li>
                     </ul>
                 </section>
 
